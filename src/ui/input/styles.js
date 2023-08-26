@@ -20,5 +20,4 @@ export const Input = styled.input`
     @media (max-width: 320px) {
         width:80%;
     }
-
 `

@@ -3,6 +3,7 @@ import './App.css';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Color } from './Color';
+import { VerfyCode } from './Components/VerfyCode';
 
 function App() {
   useEffect(() => {
@@ -10,8 +11,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Input placeholder={'sss'} />
-      <Button title={'sss'} />
+      {/* <Input placeholder={'sss'} /> */}
+      {/* <Button disabled={true} title={'sss'} /> */}
+      <VerfyCode />
     </div>
   );
 }

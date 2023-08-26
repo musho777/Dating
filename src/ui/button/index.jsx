@@ -8,11 +8,12 @@ export const Button = ({
     bottom = 0,
     right = 0,
     title,
-    onClick
+    onClick,
+    disabled
 }) => {
     const mood = Color('dark')
-
     return <S.Button
+        disabled={disabled}
         onClick={onClick}
         width={width}
         height={height}

@@ -15,7 +15,15 @@ export const Button = styled.button`
     font-size:20px;
     font-family: DejaVu Serif;
     font-weight:400;
+    @media (max-width: 320px) {
+      width:80%;
+    };
     &:hover {
         background:linear-gradient(140deg, #F09 0%, #22202E 100%);
       }
+     &:disabled {
+      background-color: gray;
+      cursor: not-allowed;
+      pointer-events: none;
+  }
 `
