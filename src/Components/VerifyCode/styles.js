@@ -8,6 +8,10 @@ export const VerfyCode = styled.div`
     & > :last-child {
         border-radius:0 30px 30px 0;
     }
+    display: flex;
+    @media (max-width: 320px) {
+        width:80%;
+    };
 `
 export const Child = styled.input`
     border:1px solid #F09;
