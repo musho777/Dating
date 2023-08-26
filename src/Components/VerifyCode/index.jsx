@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import * as S from './styles'
 import { Color } from '../../Color';
-export const VerfyCode = () => {
+export const VerifyCode = () => {
     const [data, setData] = useState([
         { value: '', ref: useRef(null) },
         { value: '', ref: useRef(null) },
@@ -15,15 +15,18 @@ export const VerfyCode = () => {
         if (value !== '') {
             item[i + 1]?.ref?.current?.focus();
         }
-        if (value <= 9) {
+        if (value <= 9 && !value.includes('e') && !value.includes('E')) {
             item[i].value = value
         }
         setData(item)
     }
     const handleKeyDown = (e, i) => {
         let item = [...data]
-        if (e === 'Backspace' && item[i].value === '') {
+        if (e.key === 'Backspace' && item[i].value === '') {
             item[i - 1]?.ref?.current?.focus();
+        }
+        if (e.key == "." || e.key === "-" || e.key === "e" || e.key === "E" || e.key === "+" || e.key === ",") {
+            e.preventDefault();
         }
         setData(item)
     }
@@ -36,7 +39,7 @@ export const VerfyCode = () => {
                 ref={elm.ref}
                 value={elm.value}
                 max={9}
-                onKeyDown={(e) => handleKeyDown(e.key, i)}
+                onKeyDown={(e) => handleKeyDown(e, i)}
                 onChange={(e) => handleChange(i, e.target.value)}
                 color={mood.color}
                 $bgcolor={mood.bg}
