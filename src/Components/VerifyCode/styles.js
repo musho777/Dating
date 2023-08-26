@@ -10,6 +10,9 @@ export const VerfyCode = styled.div`
     }
     display: flex;
     justify-content: center;
+    @media (max-width: 320px) {
+        width:80%;
+    };
 `
 export const Child = styled.input`
     border:1px solid #F09;
