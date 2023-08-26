@@ -19,7 +19,7 @@ export const GenderPage = () => {
         setSex(item)
     }
     const mood = Color('dark')
-    return <Layout progress={80} text={'Lorem ipsum dolor sit amet consectetur.'}>
+    return <Layout progress={30} text={'Lorem ipsum dolor sit amet consectetur.'}>
         {sex.map((elm, i) => (
             <ChackBox key={i} text={elm.title} checked={elm.checked} onClick={() => handelClikc(i)} />
         ))}

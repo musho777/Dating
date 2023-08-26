@@ -8,7 +8,7 @@ export default function Steper({ progress }) {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-        setProgressPercent(progressPercent + 20)
+        setProgressPercent(progressPercent + 10)
     }, [])
 
     useEffect(() => {

@@ -3,12 +3,16 @@ import * as S from './styles'
 import * as G from '../../GStyles'
 import Steper from '../Steper'
 
-export const Layout = ({ children, text, progress }) => {
+export const Layout = ({ children, text, progress, text2, logOut }) => {
     const mood = Color('dark')
     return <S.Layout>
         <S.Title color={mood.titleColor}>Logo</S.Title>
         <Steper progress={progress} />
-        <G.Text color={mood.textColor}>{text}</G.Text>
+        <G.Text color={mood.textColor}>
+            {text}
+            {text2?.length > 0 && <G.Text size={14} color={mood.textColor}>{text2}</G.Text>}
+        </G.Text>
         {children}
+        {logOut && <S.LogOut color={Color('dark').color}>Log out</S.LogOut>}
     </S.Layout>
 }

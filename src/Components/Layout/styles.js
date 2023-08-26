@@ -15,3 +15,14 @@ export const Title = styled.p`
     font-size:80px;
     font-Weight:700;
 `
+export const LogOut = styled.text`
+    color:${props => props.color};
+    font-family: DejaVu Serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    position: absolute;
+    bottom: 20px;
+`

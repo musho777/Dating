@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Text = styled.p`
     color: ${props => props.color};
-    font-size:18px;
+    font-size:${props => props.size ? props.size : 18}px;
     font-Weight:400;
     font-family:DejaVu Serif;
     line-height:30px;
