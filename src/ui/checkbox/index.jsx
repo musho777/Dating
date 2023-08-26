@@ -2,17 +2,16 @@ import { useState } from 'react'
 import { Color } from '../../Color'
 import * as S from './styles'
 import { CheckBoxSvg } from '../../Components/svg'
-export const ChackBox = ({ text }) => {
-    const [active, setActive] = useState('')
+export const ChackBox = ({ text, checked, onClick }) => {
+    // const [active, setActive] = useState('')
     const mood = Color('dark')
-
     return <S.CheckBox
-        onClick={() => setActive(!active)}
+        onClick={onClick}
         $activeColor={mood.checkBoxActiveColor}
-        $active={active}
+        $active={checked}
         $bgColor={mood.bg}
     >
         <S.Text color={mood.color}>{text}</S.Text>
-        <CheckBoxSvg active={active} />
+        <CheckBoxSvg active={checked} />
     </S.CheckBox>
 }

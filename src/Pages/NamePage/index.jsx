@@ -11,7 +11,7 @@ export const NamePage = () => {
     const mood = Color('dark')
     return <Layout progress={40} text={'Lorem ipsum dolor sit amet consectetur.'}>
         <Input onChange={(e) => setName(e.target.value)} placeholder={'Your name'} />
-        <Button title="Continue" disabled={name.length === 0} top={30}/>
+        <Button title="Continue" disabled={name.length === 0} top={30} />
         <G.TextBold16 color={mood.titleColor}>Use Facebook instead</G.TextBold16>
     </Layout>
 }
