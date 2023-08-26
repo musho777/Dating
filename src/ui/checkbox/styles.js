@@ -13,7 +13,7 @@ export const CheckBox = styled.div`
     &:hover {
         background:${props => props.$activeColor};
     }
-    @media (max-width: 320px) {
+    @media (max-width: 425px) {
         width:80%;
     }
 `

@@ -3,7 +3,6 @@ import * as S from './styles'
 
 export const Input = ({
     width = 300,
-    height = 40,
     radius = 50,
     top = 0,
     left = 0,
@@ -19,7 +18,6 @@ export const Input = ({
         value={value}
         onChange={onChange}
         width={width}
-        height={height}
         radius={radius}
         $top={top}
         $bottom={bottom}

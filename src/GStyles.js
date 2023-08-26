@@ -6,7 +6,6 @@ export const Text = styled.p`
     font-Weight:400;
     font-family:DejaVu Serif;
     line-height:30px;
-    margin-bottom:40px;
     width:450px;
     text-align: center;
     @media (max-width: 450px) {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Color } from '../../Color'
-import { CheckBoxSvg } from '../../Svg/CheckBoxSvg'
 import * as S from './styles'
+import { CheckBoxSvg } from '../../Components/svg'
 export const ChackBox = ({ text }) => {
     const [active, setActive] = useState('')
     const mood = Color('dark')
