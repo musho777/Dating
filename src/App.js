@@ -4,6 +4,12 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Color } from './Color';
 import { VerifyCode } from './Components/VerifyCode';
+import { ChackBox } from './ui/checkbox';
+import LinearDeterminate from './Components/Steper';
+import { Layout } from './Components/Layout';
+import { Login } from './Pages/LoginPage';
+import { VerifyCodePage } from './Pages/VerifyCodePage';
+import { NamePage } from './Pages/NamePage';
 
 function App() {
   useEffect(() => {
@@ -11,9 +17,9 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <Input placeholder={'sss'} /> */}
-      {/* <Button disabled={true} title={'sss'} /> */}
-      <VerifyCode />
+      <Login />
+      {/* <VerifyCodePage /> */}
+      {/* <NamePage /> */}
     </div>
   );
 }

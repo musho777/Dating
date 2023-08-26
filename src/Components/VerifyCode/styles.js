@@ -8,6 +8,8 @@ export const VerfyCode = styled.div`
     & > :last-child {
         border-radius:0 30px 30px 0;
     }
+    display: flex;
+    justify-content: center;
 `
 export const Child = styled.input`
     border:1px solid #F09;

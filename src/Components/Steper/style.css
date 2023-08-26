@@ -1,0 +1,16 @@
+.css-10jyip1-MuiLinearProgress-root {
+    background-color: #96336E !important;
+    border-radius: 50px;
+}
+
+.css-17282r-MuiLinearProgress-bar1 {
+    background-color: #f09 !important;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 320) {
+    .css-10jyip1-MuiLinearProgress-root {
+        width: 80%;
+        margin: auto;
+    }
+}

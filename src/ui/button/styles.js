@@ -22,6 +22,7 @@ export const Button = styled.button`
         background:linear-gradient(140deg, #F09 0%, #22202E 100%);
       }
      &:disabled {
+      color:#777;
       background-color: gray;
       cursor: not-allowed;
       pointer-events: none;

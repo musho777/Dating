@@ -3,9 +3,9 @@ import * as S from './styles'
 export const Button = ({
     width = 170,
     height = 45,
-    top = 0,
+    top = 50,
     left = 0,
-    bottom = 0,
+    bottom = 20,
     right = 0,
     title,
     onClick,

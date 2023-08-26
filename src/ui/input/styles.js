@@ -14,6 +14,12 @@ export const Input = styled.input`
     background:${props => props.$bgcolor};
     outline: none;
     color:${props => props.color};
+    font-family: DejaVu Serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
     &::placeholder {
         color: #797878;
     };
