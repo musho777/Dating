@@ -15,7 +15,7 @@ export const Title = styled.p`
     font-size:80px;
     font-Weight:700;
 `
-export const LogOut = styled.text`
+export const LogOut = styled.p`
     color:${props => props.color};
     font-family: DejaVu Serif;
     font-size: 14px;

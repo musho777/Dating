@@ -2,11 +2,14 @@ import * as S from './styles'
 import { useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { DropdownDown, DropdownUp } from '../svg'
+import * as G from '../../GStyles'
+import { Color } from '../../Color'
 
 export const BirthDate = () => {
     const months = useSelector(st => st.Register_reducer.months)
     const [days, setDays] = useState(Array.from({ length: 31 - 1 + 1 }, (_, index) => 1 + index))
     const [years] = useState(Array.from({ length: new Date().getFullYear() - 1900 + 1 }, (_, index) => 1900 + index).reverse())
+    const mood = Color('dark')
     const [openDropdown, setOpenDropdown] = useState({
         month: false,
         day: false,
@@ -66,48 +69,52 @@ export const BirthDate = () => {
     }
 
     return (
-        <S.Birthday>
-            <S.EachDate width={'148px'} onClick={() => handleDropdownClick('month')}>
-                <S.EachValue>{selectedValues.month}</S.EachValue>
-                {openDropdown.month ? <DropdownUp /> : <DropdownDown />}
-                {openDropdown.month &&
-                    <S.DropdownListPosition width={'148px'}>
-                        <S.EachDropdownList>
-                            {months.map((e, i) => (
-                                <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('month', e)}>{e?.title}</S.EachDropdownField>
-                            ))}
-                        </S.EachDropdownList>
-                    </S.DropdownListPosition>
-                }
-            </S.EachDate>
+        <div>
+            <S.Birthday>
+                <S.EachDate width={'148px'} onClick={() => handleDropdownClick('month')}>
+                    <S.EachValue>{selectedValues.month}</S.EachValue>
+                    {openDropdown.month ? <DropdownUp /> : <DropdownDown />}
+                    {openDropdown.month &&
+                        <S.DropdownListPosition width={'148px'}>
+                            <S.EachDropdownList>
+                                {months.map((e, i) => (
+                                    <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('month', e)}>{e?.title}</S.EachDropdownField>
+                                ))}
+                            </S.EachDropdownList>
+                        </S.DropdownListPosition>
+                    }
+                </S.EachDate>
 
-            <S.EachDate width={'103px'} onClick={() => handleDropdownClick('day')}>
-                <S.EachValue>{selectedValues.day}</S.EachValue>
-                {openDropdown.day ? <DropdownUp /> : <DropdownDown />}
-                {openDropdown.day &&
-                    <S.DropdownListPosition width={'103px'}>
-                        <S.EachDropdownList>
-                            {days.map((e, i) => (
-                                <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('day', e)}>{e}</S.EachDropdownField>
-                            ))}
-                        </S.EachDropdownList>
-                    </S.DropdownListPosition>
-                }
-            </S.EachDate>
+                <S.EachDate width={'103px'} onClick={() => handleDropdownClick('day')}>
+                    <S.EachValue>{selectedValues.day}</S.EachValue>
+                    {openDropdown.day ? <DropdownUp /> : <DropdownDown />}
+                    {openDropdown.day &&
+                        <S.DropdownListPosition width={'103px'}>
+                            <S.EachDropdownList>
+                                {days.map((e, i) => (
+                                    <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('day', e)}>{e}</S.EachDropdownField>
+                                ))}
+                            </S.EachDropdownList>
+                        </S.DropdownListPosition>
+                    }
+                </S.EachDate>
 
-            <S.EachDate width={'116px'} onClick={() => handleDropdownClick('year')}>
-                <S.EachValue>{selectedValues.year}</S.EachValue>
-                {openDropdown.year ? <DropdownUp /> : <DropdownDown />}
-                {openDropdown.year &&
-                    <S.DropdownListPosition width={'116px'}>
-                        <S.EachDropdownList>
-                            {years.map((e, i) => (
-                                <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('year', e)}>{e}</S.EachDropdownField>
-                            ))}
-                        </S.EachDropdownList>
-                    </S.DropdownListPosition>
-                }
-            </S.EachDate>
-        </S.Birthday>
+                <S.EachDate width={'116px'} onClick={() => handleDropdownClick('year')}>
+                    <S.EachValue>{selectedValues.year}</S.EachValue>
+                    {openDropdown.year ? <DropdownUp /> : <DropdownDown />}
+                    {openDropdown.year &&
+                        <S.DropdownListPosition width={'116px'}>
+                            <S.EachDropdownList>
+                                {years.map((e, i) => (
+                                    <S.EachDropdownField key={i} onClick={() => handleDropdownSelect('year', e)}>{e}</S.EachDropdownField>
+                                ))}
+                            </S.EachDropdownList>
+                        </S.DropdownListPosition>
+                    }
+                </S.EachDate>
+            </S.Birthday>
+            <G.Text2 top={20} color={mood.textColor} size={10}>Lorem ipsum dolor sit amet consectetur.</G.Text2>
+
+        </div>
     )
 }

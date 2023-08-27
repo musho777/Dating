@@ -27,6 +27,7 @@ export const Text2 = styled.p`
     font-family:DejaVu Serif;
     line-height:30px;
     text-align: center;
+    margin-top:${props => props.top}px;
 `
 export const Text700 = styled.p`
     color: ${props => props.color};

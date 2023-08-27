@@ -8,12 +8,14 @@ export const Layout = ({ children, text, progress, text2, logOut }) => {
     return <S.Layout>
         <S.Title color={mood.titleColor}>Logo</S.Title>
         {progress >= 0 && <Steper progress={progress} />}
-        <G.Text color={mood.textColor}>
-            {text}
+        <div>
+            <G.Text color={mood.textColor}>
+                {text}
+            </G.Text>
             {text2?.length > 0 && <G.Text size={14} color={mood.textColor}>{text2}</G.Text>}
-        </G.Text>
+        </div>
         {children}
-        {logOut && <S.LogOut color={Color('dark').color}>Log out</S.LogOut>}
+        {logOut && <S.LogOut color={mood.textColor}>Log out</S.LogOut>}
         {/* {!logOut &&
             <S.TextWrapper>
                 <G.Text2 style={{ display: 'flex' }} size={12} color={mood.textColor}>
