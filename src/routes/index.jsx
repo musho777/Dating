@@ -7,6 +7,7 @@ import { GenderPage } from '../Pages/GenderPage'
 import { AddImgPage } from '../Pages/AddImgPage'
 import { PasswordPage } from '../Pages/PasswordPage'
 import { LocationPage } from '../Pages/LocationPage'
+import { PurposePage } from '../Pages/PurposePage'
 
 export const Router = () => {
     return (
@@ -19,8 +20,10 @@ export const Router = () => {
                 <Route path='/register/fileinput' element={<AddImgPage />} />
                 <Route path='/register/password' element={<PasswordPage />} />
                 <Route path='/register/location' element={<LocationPage />} />
+                <Route path='/register/purpose' element={<PurposePage />} />
 
             </Routes>
         </BrowserRouter>
     )
 }
+// PurposePage

@@ -42,3 +42,17 @@ export const CheckBoxSvg = ({ active }) => {
 
     }
 }
+
+export const FbSvg = () => {
+    return <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 12.116C24 5.44662 18.629 0.0429688 12 0.0429688C5.37097 0.0429688 0 5.44662 0 12.116C0 18.1418 4.38823 23.1365 10.125 24.043V15.606H7.07661V12.116H10.125V9.45603C10.125 6.43047 11.9153 4.75924 14.6574 4.75924C15.9706 4.75924 17.3439 4.99486 17.3439 4.99486V7.96443H15.8303C14.34 7.96443 13.875 8.89522 13.875 9.84986V12.116H17.2031L16.6708 15.606H13.875V24.043C19.6118 23.1365 24 18.1418 24 12.116Z" fill="white" />
+    </svg>
+
+}
+
+export const GoogleSvg = () => {
+    return <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12.6035" r="12" fill="white" />
+    </svg>
+
+}
