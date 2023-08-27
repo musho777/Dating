@@ -5,6 +5,8 @@ import { VerifyCodePage } from '../Pages/VerifyCodePage'
 import { NamePage } from '../Pages/NamePage'
 import { GenderPage } from '../Pages/GenderPage'
 import { AddImgPage } from '../Pages/AddImgPage'
+import { PasswordPage } from '../Pages/PasswordPage'
+import { LocationPage } from '../Pages/LocationPage'
 
 export const Router = () => {
     return (
@@ -15,6 +17,9 @@ export const Router = () => {
                 <Route path='/register/name' element={<NamePage />} />
                 <Route path='/register/gender' element={<GenderPage />} />
                 <Route path='/register/fileinput' element={<AddImgPage />} />
+                <Route path='/register/password' element={<PasswordPage />} />
+                <Route path='/register/location' element={<LocationPage />} />
+
             </Routes>
         </BrowserRouter>
     )

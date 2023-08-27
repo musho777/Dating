@@ -26,3 +26,7 @@ export const LogOut = styled.text`
     position: absolute;
     bottom: 20px;
 `
+export const TextWrapper = styled.div`
+    position: absolute;
+    bottom: 20px;
+`

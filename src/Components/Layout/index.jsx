@@ -14,5 +14,12 @@ export const Layout = ({ children, text, progress, text2, logOut }) => {
         </G.Text>
         {children}
         {logOut && <S.LogOut color={Color('dark').color}>Log out</S.LogOut>}
+        {!logOut &&
+            <S.TextWrapper>
+                <G.Text style={{ display: 'flex' }} size={12} color={mood.textColor}>
+                    By signing up, you agree to our Terms. See how we use your data in our <span style={{ textDecorationLine: 'underline', marginLeft: '4px' }}> Privacy Policy.</span>
+                </G.Text>
+            </S.TextWrapper>
+        }
     </S.Layout>
 }
