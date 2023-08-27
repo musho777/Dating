@@ -7,7 +7,7 @@ export const Layout = ({ children, text, progress, text2, logOut }) => {
     const mood = Color('dark')
     return <S.Layout>
         <S.Title color={mood.titleColor}>Logo</S.Title>
-        {progress > 0 && <Steper progress={progress} />}
+        {progress >= 0 && <Steper progress={progress} />}
         <G.Text color={mood.textColor}>
             {text}
             {text2?.length > 0 && <G.Text size={14} color={mood.textColor}>{text2}</G.Text>}

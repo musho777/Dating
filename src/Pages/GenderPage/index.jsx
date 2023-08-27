@@ -4,8 +4,11 @@ import { ChackBox } from "../../ui/checkbox"
 import * as G from '../../GStyles'
 import { Color } from "../../Color"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+
 
 export const GenderPage = () => {
+    const navigate = useNavigate()
     const [sex, setSex] = useState([
         { title: 'Man', checked: false },
         { title: 'Woman', checked: false },
@@ -18,12 +21,13 @@ export const GenderPage = () => {
         item[i].checked = true
         setSex(item)
     }
+
     const mood = Color('dark')
-    return <Layout progress={30} text={'Lorem ipsum dolor sit amet consectetur.'}>
+    return <Layout progress={40} text={'Lorem ipsum dolor sit amet consectetur.'}>
         {sex.map((elm, i) => (
             <ChackBox key={i} text={elm.title} checked={elm.checked} onClick={() => handelClikc(i)} />
         ))}
-        <Button title="Continue" top={30} />
+        <Button onClick={() => navigate('/register/location')} title="Continue" top={30} disabled={!sex[0].checked && !sex[1].checked} />
         <G.TextBold16 color={mood.titleColor}>Use Facebook instead</G.TextBold16>
 
     </Layout>

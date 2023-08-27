@@ -16,7 +16,7 @@ export const PurposePage = () => {
         item[i].active = true
         setData(item)
     }
-    return <Layout progress={30} text={'Lorem ipsum dolor sit amet consectetur.'}>
+    return <Layout progress={90} text={'Lorem ipsum dolor sit amet consectetur.'}>
         {data.map((elm, i) => (
             <PurposeBlock key={i} onClick={() => handelClick(i)} active={elm.active} title={elm.title} text={elm.text} />
         ))}

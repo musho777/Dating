@@ -4,9 +4,13 @@ import { Layout } from "../../Components/Layout"
 import * as S from './styles'
 import * as G from '../../GStyles'
 import { Button } from "../../ui/button"
+import { useNavigate } from "react-router-dom"
+
 
 export const AddImgPage = () => {
     const [data, setData] = useState([''])
+    const navigate = useNavigate()
+
     const showImg = (event) => {
         let item = [...data]
         let img = URL.createObjectURL(event.target.files[0])
@@ -20,7 +24,7 @@ export const AddImgPage = () => {
         }
         setData(item)
     }
-    return <Layout progress={40} text={'Lorem ipsum dolor sit amet consectetur.'} text2={'Lorem ipsum dolor sit amet consectetur.'} logOut>
+    return <Layout progress={80} text={'Lorem ipsum dolor sit amet consectetur.'} text2={'Lorem ipsum dolor sit amet consectetur.'} logOut>
         <S.Wrapper>
             {data.map((elm, i) => {
                 if (elm === '') {
@@ -31,7 +35,10 @@ export const AddImgPage = () => {
                 }
             })}
         </S.Wrapper>
-        <Button title={'Continue'} />
+        <Button
+            title={'Continue'}
+            onClick={() => navigate('/register/purpose')}
+        />
         <G.Text size={10} color='#B4B1B1'>Lorem ipsum dolor sit amet consectetur.</G.Text>
     </Layout>
 }

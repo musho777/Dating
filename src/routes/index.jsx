@@ -8,6 +8,9 @@ import { AddImgPage } from '../Pages/AddImgPage'
 import { PasswordPage } from '../Pages/PasswordPage'
 import { LocationPage } from '../Pages/LocationPage'
 import { PurposePage } from '../Pages/PurposePage'
+import { BirthDatePage } from '../Pages/BirthDatePage'
+import { LanguagePage } from '../Pages/LanguagePage'
+import { NationalityPage } from '../Pages/NationalityPage'
 
 export const Router = () => {
     return (
@@ -17,13 +20,15 @@ export const Router = () => {
                 <Route path='/register/code' element={<VerifyCodePage />} />
                 <Route path='/register/name' element={<NamePage />} />
                 <Route path='/register/gender' element={<GenderPage />} />
-                <Route path='/register/fileinput' element={<AddImgPage />} />
+                <Route path='/register/addimg' element={<AddImgPage />} />
                 <Route path='/register/password' element={<PasswordPage />} />
                 <Route path='/register/location' element={<LocationPage />} />
                 <Route path='/register/purpose' element={<PurposePage />} />
+                <Route path='/register/birthdate' element={<BirthDatePage />} />
+                <Route path='/register/language' element={<LanguagePage />} />
+                <Route path='/register/nationality' element={<NationalityPage />} />
 
             </Routes>
         </BrowserRouter>
     )
 }
-// PurposePage
