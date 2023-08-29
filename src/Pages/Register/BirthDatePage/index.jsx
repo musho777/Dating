@@ -1,6 +1,6 @@
-import { Layout } from "../../Components/Layout"
-import { BirthDate } from "../../Components/birthDate"
-import { Button } from "../../ui/button"
+import { Layout } from "../../../Components/Layout"
+import { BirthDate } from "../../../Components/birthDate"
+import { Button } from "../../../ui/button"
 import { useNavigate } from "react-router-dom"
 
 export const BirthDatePage = () => {

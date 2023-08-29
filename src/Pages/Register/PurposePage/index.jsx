@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { PurposeBlock } from "../../Components/PurposeBlock"
-import { Button } from "../../ui/button"
+import { Layout } from "../../../Components/Layout"
+import { PurposeBlock } from "../../../Components/PurposeBlock"
+import { Button } from "../../../ui/button"
 
 export const PurposePage = () => {
     const [data, setData] = useState([

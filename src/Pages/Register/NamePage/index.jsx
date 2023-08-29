@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { Button } from "../../ui/button"
-import { Input } from "../../ui/input"
-import * as G from '../../GStyles'
-import { Color } from "../../Color"
+import { Layout } from "../../../Components/Layout"
+import { Button } from "../../../ui/button"
+import { Input } from "../../../ui/input"
+import * as G from '../../../GStyles'
+import { Color } from "../../../Color"
 import { useNavigate } from "react-router-dom"
 
 

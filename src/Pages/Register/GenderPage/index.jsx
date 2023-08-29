@@ -1,8 +1,8 @@
-import { Layout } from "../../Components/Layout"
-import { Button } from "../../ui/button"
-import { ChackBox } from "../../ui/checkbox"
-import * as G from '../../GStyles'
-import { Color } from "../../Color"
+import { Layout } from "../../../Components/Layout"
+import { Button } from "../../../ui/button"
+import { ChackBox } from "../../../ui/checkbox"
+import * as G from '../../../GStyles'
+import { Color } from "../../../Color"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 

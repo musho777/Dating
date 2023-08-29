@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { FileInput } from "../../Components/FileInput"
-import { Layout } from "../../Components/Layout"
+import { FileInput } from "../../../Components/FileInput"
+import { Layout } from "../../../Components/Layout"
 import * as S from './styles'
-import * as G from '../../GStyles'
-import { Button } from "../../ui/button"
+import * as G from '../../../GStyles'
+import { Button } from "../../../ui/button"
 import { useNavigate } from "react-router-dom"
 
 

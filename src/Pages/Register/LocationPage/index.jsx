@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { DropDown } from "../../Components/birthDate/dropDown"
-import { Button } from "../../ui/button"
+import { Layout } from "../../../Components/Layout"
+import { DropDown } from "../../../Components/birthDate/dropDown"
+import { Button } from "../../../ui/button"
 import { useNavigate } from "react-router-dom"
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { VerifyCode } from "../../Components/VerifyCode"
-import { Button } from "../../ui/button"
+import { Layout } from "../../../Components/Layout"
+import { VerifyCode } from "../../../Components/VerifyCode"
+import { Button } from "../../../ui/button"
 import { useNavigate } from "react-router-dom"
 
 export const VerifyCodePage = () => {

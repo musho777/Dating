@@ -1,11 +1,11 @@
 import { useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { CheckBox } from "../../Components/checkBox"
-import { Button } from "../../ui/button"
+import { Layout } from "../../../Components/Layout"
+import { CheckBox } from "../../../Components/checkBox"
+import { Button } from "../../../ui/button"
 import { useNavigate } from "react-router-dom"
 import * as S from './styles'
 
-export const LanguagePage = () => {
+export const NationalityPage = () => {
     const navigate = useNavigate()
     const [data, setData] = useState([
         { title: 'Armenian', selected: false },
@@ -35,7 +35,7 @@ export const LanguagePage = () => {
         })
         setDisable(send)
     }
-    return <Layout progress={60} text={'Select the languages you speak.'}>
+    return <Layout progress={70} text={'Choice of nationality'}>
         <S.Wrapper>
             {data.map((elm, i) => (
                 <CheckBox key={i} onClick={() => handelClick(i, elm.selected)} checked={elm.selected} text={elm.title} />
@@ -45,7 +45,7 @@ export const LanguagePage = () => {
             title={'Continue'}
             top={30}
             disabled={disable}
-            onClick={() => navigate('/register/nationality')}
+            onClick={() => navigate('/register/addimg')}
         />
     </Layout>
 }

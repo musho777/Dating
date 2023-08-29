@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Layout } from "../../Components/Layout"
-import { Button } from "../../ui/button"
-import { Input } from "../../ui/input"
+import { Layout } from "../../../Components/Layout"
+import { Button } from "../../../ui/button"
+import { Input } from "../../../ui/input"
 import { useNavigate } from "react-router-dom"
 
 export const PasswordPage = () => {
