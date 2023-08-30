@@ -7,6 +7,7 @@ export const Color = (mood = 'light') => {
             checkBoxActiveColor: '#F09',
             titleColor: '#F09',
             textColor: '#000',
+            inputBg: '#fff',
         }
     }
     return {
@@ -16,6 +17,6 @@ export const Color = (mood = 'light') => {
         checkBoxActiveColor: '#F09',
         titleColor: '#F09',
         textColor: '#fff',
-
+        inputBg: '#fff',
     }
 }

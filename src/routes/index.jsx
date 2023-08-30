@@ -10,6 +10,10 @@ import { PurposePage } from '../Pages/Register/PurposePage'
 import { BirthDatePage } from '../Pages/Register/BirthDatePage'
 import { LanguagePage } from '../Pages/Register/LanguagePage'
 import { NationalityPage } from '../Pages/Register/NationalityPage'
+import { LoginPage } from '../Pages/Login/Index'
+import { ForgotPassword } from '../Pages/ForgotPassword'
+import { ConfirmForgotPassword } from '../Pages/ConfirmForgotPassword'
+import { NewPassword } from '../Pages/NewPassword'
 
 export const Router = () => {
     return (
@@ -26,8 +30,13 @@ export const Router = () => {
                 <Route path='/register/birthdate' element={<BirthDatePage />} />
                 <Route path='/register/language' element={<LanguagePage />} />
                 <Route path='/register/nationality' element={<NationalityPage />} />
+                <Route path='/login' element={<LoginPage />} />
+                <Route path='/forgotpassword' element={<ForgotPassword />} />
+                <Route path='/confirmcode' element={<ConfirmForgotPassword />} />
+                <Route path='/newpassword' element={<NewPassword />} />
 
             </Routes>
         </BrowserRouter>
     )
 }
+// NewPassword

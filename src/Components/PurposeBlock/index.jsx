@@ -23,8 +23,8 @@ export const PurposeBlock = ({ active, title, text, onClick }) => {
             })
         }
     }, [active])
-    return <S.Block onClick={onClick} bg={color.bg}>
-        <G.Text700 style={{ textAlign: 'start' }} size={24} color={color.color}>{title}</G.Text700>
-        <G.Text700 style={{ textAlign: 'start' }} size={16} color={color.color}>{text}</G.Text700>
+    return <S.Block onClick={onClick}>
+        <G.Text700 style={{ textAlign: 'start' }} size={24} color={'#000'}>{title}</G.Text700>
+        <G.Text700 style={{ textAlign: 'start' }} size={16} color={'#000'}>{text}</G.Text700>
     </S.Block>
 }

@@ -9,8 +9,11 @@ export const Text = styled.p`
     width:450px;
     text-align: center;
     @media (max-width: 450px) {
-        width:80%;
+        width:100%;
         margin: auto;
+        font-size:14px;
+        display: flex;
+        align-items: center;
     };
 `
 export const TextBold16 = styled.p`
@@ -40,7 +43,7 @@ export const Text700 = styled.p`
 `
 export const TextPolicy = styled.p`
     color: ${props => props.color};
-    font-size:${props => props.size ? props.size : 18}px;
+    font-size:${props => props.size ? props.size : 12}px;
     font-Weight:400;
     font-family:DejaVu Serif;
     line-height:30px;

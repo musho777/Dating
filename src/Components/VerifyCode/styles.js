@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 
 export const VerfyCode = styled.div`
     width:300px;
-    box-shadow: -7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E;
     & > :first-child {
         border-radius:30px 0 0 30px;
         border-left:1px solid #F09;
@@ -14,6 +13,7 @@ export const VerfyCode = styled.div`
     justify-content: center;
     @media (max-width: 425px) {
         width:80%;
+        
     };
 `
 export const Child = styled.input`

@@ -23,7 +23,7 @@ export const Input = ({
         $bottom={bottom}
         $left={left}
         $right={right}
-        $bgcolor={mood.bg}
-        color={mood.color}
+        $bgcolor={mood.inputBg}
+        color={'#000'}
     />
 }

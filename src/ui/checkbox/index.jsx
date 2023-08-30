@@ -9,9 +9,8 @@ export const ChackBox = ({ text, checked, onClick }) => {
         onClick={onClick}
         $activeColor={mood.checkBoxActiveColor}
         $active={checked}
-        $bgColor={mood.bg}
     >
-        <S.Text color={mood.color}>{text}</S.Text>
+        <S.Text color={'#000'}>{text}</S.Text>
         <CheckBoxSvg active={checked} />
     </S.CheckBox>
 }

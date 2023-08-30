@@ -51,8 +51,7 @@ export const VerifyCode = ({ getCode }) => {
                 max={9}
                 onKeyDown={(e) => handleKeyDown(e, i)}
                 onChange={(e) => handleChange(i, e.target.value)}
-                color={mood.color}
-                $bgcolor={mood.bg}
+                color={"#000"}
             />
         })}
     </S.VerfyCode>
