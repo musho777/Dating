@@ -11,8 +11,11 @@ export const Title = styled.p`
 export const Menu = styled.p`
     font
 `
-export const Wrapper = styled.div`display: flex;
-    justify-content: space-around;
+export const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 `

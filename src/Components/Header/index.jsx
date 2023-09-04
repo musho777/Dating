@@ -13,7 +13,7 @@ export const Header = () => {
             </div>
             <div style={{ display: 'flex' }}>
                 {menu.map((elm, i) => {
-                    return <div style={{ margin: 20 }}>
+                    return <div style={{ margin: 20 }} key={i}>
                         <G.Text2 className='text' color={mood.color} size={20}>{elm}</G.Text2>
                     </div>
                 })

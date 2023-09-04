@@ -9,7 +9,7 @@ export const Card = ({ img, title, text }) => {
                 <G.Text2 color='#383838' style={{ padding: '0 70px' }} >
                     Lorem ipsum dolor sit amet consectetur. Tortor eget sagittis ipsum sem. Enim sit et commodo pellentesque pulvinar.
                 </G.Text2>
-                <S.Button>dsd</S.Button>
+                <S.Button>Interested</S.Button>
             </S.TextWrapper>
             <S.Opacity>
 

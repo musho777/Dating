@@ -15,6 +15,8 @@ export const Button = styled.button`
     font-size:20px;
     font-family: DejaVu Serif;
     font-weight:400;
+    z-index: 1;
+    cursor: pointer;
     &:hover {
         background:linear-gradient(140deg, #F09 0%, #22202E 100%);
       }
