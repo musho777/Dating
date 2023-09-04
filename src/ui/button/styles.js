@@ -10,8 +10,8 @@ export const Button = styled.button`
     background:${props => props.$bgcolor};
     color:${props => props.color};
     border-radius:50px;
-    border:none;
-    box-shadow: -7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E;
+    border:${props => props.mood === 'light' ? "none" : "4px solid #6A1551"};
+    box-shadow: ${props => props.mood === 'light' ? "-7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E;" : '-7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E, 0px 0px 32px 0px #BF2899'};
     font-size:20px;
     font-family: DejaVu Serif;
     font-weight:400;

@@ -29,7 +29,7 @@ export const Text2 = styled.p`
     font-size:${props => props.size ? props.size : 18}px;
     font-Weight:400;
     font-family:DejaVu Serif;
-    line-height:30px;
+    line-height:normal;
     text-align: center;
     margin-top:${props => props.top}px;
 `

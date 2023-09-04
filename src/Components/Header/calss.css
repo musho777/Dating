@@ -1,0 +1,4 @@
+.text:hover {
+    color: rgba(191, 40, 153, 1);
+    cursor: pointer;
+}

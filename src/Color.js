@@ -13,7 +13,7 @@ export const Color = (mood = 'light') => {
     return {
         bg: '#22202E',
         color: '#fff',
-        buttonBg: 'linear-gradient(200deg, #F09 0%, #22202E 100%)',
+        buttonBg: '#22202E',
         checkBoxActiveColor: '#F09',
         titleColor: '#F09',
         textColor: '#fff',

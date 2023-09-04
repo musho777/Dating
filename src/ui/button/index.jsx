@@ -9,9 +9,12 @@ export const Button = ({
     right = 0,
     title,
     onClick,
-    disabled
+    disabled,
+    type = 'dark'
 }) => {
-    const mood = Color('dark')
+    console.log(type)
+    const mood = Color(type)
+    console.log(mood.buttonBg)
     return <S.Button
         disabled={disabled}
         onClick={onClick}
@@ -22,7 +25,8 @@ export const Button = ({
         $bottom={bottom}
         $right={right}
         $bgcolor={mood.buttonBg}
-        color={mood.color}
+        color={'#fff'}
+        mood={type}
     >
         {title}
     </S.Button>

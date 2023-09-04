@@ -50,3 +50,4 @@ export const PolicyWrapper = styled.div`
     display: flex;
     margin-top: 10px;
 `
+

@@ -14,11 +14,13 @@ import { LoginPage } from '../Pages/Login/Index'
 import { ForgotPassword } from '../Pages/ForgotPassword'
 import { ConfirmForgotPassword } from '../Pages/ConfirmForgotPassword'
 import { NewPassword } from '../Pages/NewPassword'
+import { MainPage } from '../Pages/Main'
 
 export const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path='/' element={<MainPage />} />
                 <Route path='/register/email' element={<EmailPage />} />
                 <Route path='/register/code' element={<VerifyCodePage />} />
                 <Route path='/register/name' element={<NamePage />} />
