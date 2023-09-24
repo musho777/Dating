@@ -10,7 +10,8 @@ export const Input = ({
     right = 0,
     placeholder,
     onChange = () => { },
-    value
+    value,
+    type
 }) => {
     const mood = Color('dark')
     return <S.Input
@@ -25,5 +26,6 @@ export const Input = ({
         $right={right}
         $bgcolor={mood.inputBg}
         color={'#000'}
+        type={type}
     />
 }

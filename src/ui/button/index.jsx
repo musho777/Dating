@@ -12,9 +12,7 @@ export const Button = ({
     disabled,
     type = 'dark'
 }) => {
-    console.log(type)
     const mood = Color(type)
-    console.log(mood.buttonBg)
     return <S.Button
         disabled={disabled}
         onClick={onClick}

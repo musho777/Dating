@@ -36,7 +36,6 @@ export const Router = () => {
                 <Route path='/forgotpassword' element={<ForgotPassword />} />
                 <Route path='/confirmcode' element={<ConfirmForgotPassword />} />
                 <Route path='/newpassword' element={<NewPassword />} />
-
             </Routes>
         </BrowserRouter>
     )

@@ -9,7 +9,6 @@ export const Input = styled.input`
     margin-right:${props => props.$right}px;
     border: 1px solid #701454;
     border-radius:50px;
-    box-shadow: -7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E;
     background:${props => props.$bgcolor};
     outline: none;
     color:${props => props.color};
@@ -18,11 +17,9 @@ export const Input = styled.input`
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    type: ${props => props.type}
 
     &::placeholder {
         color: #797878;
     };
-    @media (max-width: 425px) {
-        width:80%;
-    }
 `

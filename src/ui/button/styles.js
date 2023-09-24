@@ -7,16 +7,16 @@ export const Button = styled.button`
     margin-left:${props => props.$left}px;
     margin-bottom:${props => props.$bottom}px;
     margin-right:${props => props.$right}px;
-    background:${props => props.$bgcolor};
+    background:linear-gradient(142deg, #F09 -136.47%, #22202E 100%) !important;
     color:${props => props.color};
     border-radius:50px;
     border:${props => props.mood === 'light' ? "none" : "4px solid #6A1551"};
-    box-shadow: ${props => props.mood === 'light' ? "-7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E;" : '-7px -7px 30px 0px #22202E, 7px 7px 32px 0px #17161E, 0px 0px 32px 0px #BF2899'};
     font-size:20px;
     font-family: DejaVu Serif;
     font-weight:400;
     z-index: 1;
     cursor: pointer;
+    border: none;
     &:hover {
         background:linear-gradient(140deg, #F09 0%, #22202E 100%);
       }

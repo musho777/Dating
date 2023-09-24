@@ -60,7 +60,7 @@ export const MainPage = () => {
                     </div>
                 </S.Wrapper>
                 <div style={{ justifyContent: 'center', display: 'flex' }}>
-                    <Button title={'Register Now'} type='light' width={300} />
+                    <Button title={'Register Now'} type='light' width={300} onClick={() => window.location = '/register/email'}/>
                 </div>
             </div>
         </S.Block1>

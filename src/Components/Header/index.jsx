@@ -20,7 +20,7 @@ export const Header = () => {
                 }
             </div>
             <div>
-                <Button title={'Log In'} />
+                <Button title={'Log In'} onClick={() => window.location = '/login'} />
             </div>
         </S.Wrapper>
     </S.Header>

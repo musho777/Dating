@@ -37,9 +37,9 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #ffff;
+    background-color:rgb(255, 255, 255,0.7);
     align-items: center;
-    opacity: 80%;
+    // opacity: 80%;
     padding: 30px;
     @media screen and (max-width: 768px) {
         width:90%
